@@ -18,7 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar click={() => setSideToggle(true)} />
-      <SideDrawer show={sideToggle} />
+      <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
       <main>
         <Routes>
@@ -27,9 +27,6 @@ function App() {
           <Route path="/cart" element={<CartScreen />} />
         </Routes>
       </main>
-      {/* HomeScreen */}
-      {/* ProductScreen */}
-      {/* CartScreen */}
     </BrowserRouter>
   );
 }
