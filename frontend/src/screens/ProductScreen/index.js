@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+// import { useDispatch, useSelector } from "react-redux";
+// import { addToCart } from "../../redux/actions/cartActions";
+// import { getProductDetails } from "../../redux/actions/productActions";
 import "./style.css";
 
 const ProductScreen = () => {
+  // const dispatch = useDispatch()
+
   return (
     <div className="productscreen">
       <div className="productscreen__left">
